@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Neuton:400,800|Oswald:400,700');
+
+body {
+    font-family: 'Neuton', serif;
+    font-size: 1.2em;
+    background-color: #FFEBDA;
+    color: #513B34;
+}
+
+img {
+	max-width:100%;
+	display:inline-block;
+}
+
+.navigation{
+    background-color: #956A6A;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation img{
+    max-width: 8%;
+    max-height: 8%;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li a{
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.navigation ul a::before {content:""; display:block; position:absolute; left:0; top:15px; width:100%; height:1px; background-color:#fff; transform:scaleX(0); transform-origin:center right; transition:.45s;}
+.navigation ul a::after {content:""; display:block; position:absolute; left:0; bottom:15px; width:100%; height:1px; background-color:#fff; transform:scaleX(0); transform-origin:center left; transition:.45s;}
+.navigation ul a:hover::before, nav ul a:hover::after {transform:scaleX(1);}
+
+.homepage{
+    text-align: center;
+}
+
+.homepage h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+.homepage img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.btn{
+    background-color:#956A6A;
+    border-color: #956A6A;
+    color: #fff;
+}
+
+.footer{
+    background-color: #956A6A;
+    color: #fff;
+    font-size: 1em;
+}
+
+.footer h5{
+    font-family: 'Oswald', sans-serif;
+}
+
+.alert-success{
+    background-color: #F9D2D2;
+    border-color: #F9D2D2;
+    color: #731111;
+}
+
+.alert h5{
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-body{
+    background-color: rgb(250, 241, 234);
+}
+
+.card-body h5{
+    font-family: 'Oswald', sans-serif;
+}
+
+.card .badge{
+    background-color: rgba(214, 27, 27, 0.849);
+}
+
+.pagination li a{
+    color: #513B34;
+    background-color: rgb(250, 241, 234);
+}
+
+.pagination li a:hover{
+    color: #513B34;
+    background-color: rgb(243, 232, 230);
+}
+
+.pagination li a:focus{
+    color: #513B34;
+    background-color: rgb(243, 232, 230);
+}
