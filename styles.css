@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Neuton:400,800|Oswald:400,700');
+@keyframes logochange {
+    25%{transform:rotate(30deg);}
+    50%{transform:rotate(0deg);}
+    75%{transform:rotate(-30deg);}
+}
+
+.navigation img{
+    animation: logochange 3s 0s infinite;
+}
 
 body {
     font-family: 'Neuton', serif;
@@ -33,6 +42,7 @@ img {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    font-size: 1.1em;
 }
 
 .navigation ul li a{
@@ -40,7 +50,7 @@ img {
     display: block;
     color: #fff;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     position: relative;
     text-align: center;
     transition: 1s;
@@ -49,6 +59,14 @@ img {
 .navigation ul a::before {content:""; display:block; position:absolute; left:0; top:15px; width:100%; height:1px; background-color:#fff; transform:scaleX(0); transform-origin:center right; transition:.45s;}
 .navigation ul a::after {content:""; display:block; position:absolute; left:0; bottom:15px; width:100%; height:1px; background-color:#fff; transform:scaleX(0); transform-origin:center left; transition:.45s;}
 .navigation ul a:hover::before, nav ul a:hover::after {transform:scaleX(1);}
+
+.navigation .form-control:focus{
+    border-color: #FFEBDA;
+}
+.navigation .navbar-toggler:focus{
+    border-color: #FFEBDA;
+    outline-style: none;
+}
 
 .homepage{
     text-align: center;
@@ -72,11 +90,38 @@ img {
 .footer{
     background-color: #956A6A;
     color: #fff;
-    font-size: 1em;
 }
 
 .footer h5{
     font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.footer i{
+    margin: 5px;
+}
+
+.footer i:hover{
+    color: #FFEBDA;
+}
+
+.footer ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    justify-content: center;
+}
+
+.footerlink ul li{
+    margin: 0px 20px;
+}
+
+.footer .icons{
+    margin-top: 5px;
 }
 
 .alert-success{
@@ -85,7 +130,7 @@ img {
     color: #731111;
 }
 
-.alert h5{
+.alert h4{
     font-family: 'Oswald', sans-serif;
 }
 
@@ -114,4 +159,126 @@ img {
 .pagination li a:focus{
     color: #513B34;
     background-color: rgb(243, 232, 230);
+}
+
+figure{
+    position: relative;
+    overflow: hidden;
+}
+
+figure img{
+    position: relative;
+    display: block;
+    opacity: 0.95;
+}
+
+figure figcaption{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figure.effect-layla h5{
+    padding-top: 25%;
+	margin-left: 140px;
+	transition: transform 0.35s;
+	transition: transform 0.35s;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.8em;
+    color: #731111;
+    transform: translate3d(0,-10px,0);
+}
+
+figure.effect-layla p{
+    padding: 0.5em 2em;
+	text-transform: none;
+	opacity: 0;
+	transform: translate3d(0,-5px,0);
+    font-size: 1em;
+    color: #731111;
+}
+
+figure.effect-layla img, figure.effect-layla p{
+    opacity: 0.5s;
+    transform: 0.5s;
+}
+
+figure.effect-layla:hover img{
+    background-color: #FFEBDA;
+    opacity: 0.3;
+}
+
+figure.effect-layla:hover h5, figure.effect-layla:hover p{
+    opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover h5, figure.effect-layla:hover p, figure.effect-layla:hover img{
+    transition-delay: 0.15s;
+}
+
+.about h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+
+.contact ul{
+    margin-top: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px){
+    .navigation .flex{
+        flex-wrap: wrap;
+    }
+
+    .navigation ul{
+        font-size: 1em;
+    }
+
+    .navigation img{
+        max-width: 10%;
+        max-height: 10%;
+    }
+
+    .navigation .form-control{
+        width: 100%;
+    }
+
+    .footer h5{
+        font-size: 1.1em;
+    }
+
+    .icons i{
+        font-size: 1em;
+    }
+
+    .footer .footerlink ul{
+        flex-wrap: wrap;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:540px){
+    
+    .navigation ul{
+        font-size:0.8em;
+    }
+
+    .footer h5{
+        font-size: 1em;
+    }
+
+    .icons i{
+        font-size: 0.9em;
+    }
+
+    .footer .footerlink ul{
+        font-size:0.7em;
+    }
 }

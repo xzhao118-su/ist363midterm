@@ -8,34 +8,121 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"/>
 </head>
 <body>
 
-    <nav class="navigation navbar navbar-expand-lg sticky-top">
+    <nav class="navigation navbar navbar-expand-md sticky-top">
         <div class="container">
             <img src="images/logo1.png">
             <div class="flex">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="food.html">Food</a>
-                    </li>
-                    <li>
-                        <a href="restaurant.html">Restaurant</a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html">About Us</a>
-                    </li>
-                </ul>
-                <form class="form-inline ml-2">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                </form>   
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="food.html">Food</a>
+                        </li>
+                        <li>
+                            <a href="restaurant.html">Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">About Us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline ml-2">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form> 
+                </div>
+                <nav class="navbar navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>              
             </div>
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="mt-3 col-12">
+                <figure class="effect-layla">
+                    <img class="rounded" src="images\rest1.jpg" alt=""/>
+                    <figcaption>
+                        <h5>Gudetama Restaurant</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum magni corporis minima consectetur laboriosam eaque earum ipsa mollitia dolorem deserunt!</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="mt-3 col-12">
+                    <figure class="effect-layla">
+                        <img class="rounded" src="images\rest2.jpg" alt=""/>
+                        <figcaption>
+                            <h5>Hello Kitty Restaurant</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum magni corporis minima consectetur laboriosam eaque earum ipsa mollitia dolorem deserunt!</p>
+                        </figcaption>
+                    </figure>
+            </div>
+            <div class="mt-3 col-12">
+                    <figure class="effect-layla">
+                        <img class="rounded" src="images\rest4.jpg" alt=""/>
+                        <figcaption>
+                            <h5>Undersea Restaurant</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum magni corporis minima consectetur laboriosam eaque earum ipsa mollitia dolorem deserunt!</p>
+                        </figcaption>
+                    </figure>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example" class="mt-3">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-9 col-12">
+                    <h5>Fancy Food</h5>
+                </div>
+                <div class="col-lg-2 col-md-3 col-12 icons">
+                    <ul>
+                    <li><i class="fab fa-facebook-f fa-lg"></i></li>
+                    <li><i class="fab fa-twitter fa-lg"></i></li>
+                    <li><i class="fab fa-youtube fa-lg"></i></li>
+                    <li><i class="fab fa-instagram fa-lg"></i></li>
+                    <li><i class="far fa-envelope fa-lg"></i></li>
+                    </ul>
+                </div>
+                <div class="col-12 mt-2 mb-2 footerlink">
+                        <ul>
+                            <li>CONTACT US</li>
+                            <li>INVESTORS</li>
+                            <li>TERMS OF USE</li>
+                            <li>PRIVACY POLICY</li>
+                        </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

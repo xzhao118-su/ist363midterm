@@ -8,30 +8,38 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"/>
 </head>
 <body>
     
-    <nav class="navigation navbar navbar-expand-lg sticky-top">
+    <nav class="navigation navbar navbar-expand-md sticky-top">
         <div class="container">
             <img src="images/logo1.png">
             <div class="flex">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="food.html">Food</a>
-                    </li>
-                    <li>
-                        <a href="restaurant.html">Restaurant</a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html">About Us</a>
-                    </li>
-                </ul>
-                <form class="form-inline ml-2">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                </form>   
+                <div class="collapse navbar-collapse content" id="navbarToggleExternalContent">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="food.html">Food</a>
+                        </li>
+                        <li>
+                            <a href="restaurant.html">Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">About Us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline ml-2">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form> 
+                </div>
+                <nav class="navbar navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>              
             </div>
         </div>
     </nav>
@@ -66,19 +74,19 @@
 
     <div class="container">    
         <div class="row mt-3">
-            <div class="col-lg-4 homepage">
+            <div class="col-md-4 col-sm-6 col-12 homepage mb-3">
                 <img class="rounded mb-2" src="images\food4.jpeg" alt="Food"/>
                 <h4>Food</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis distinctio, fugit facere praesentium vel neque. Dicta quia molestias assumenda quod.</p>
                 <button type="button" class="btn">Go</button>
             </div>
-            <div class="col-lg-4 homepage">
+            <div class="col-md-4 col-sm-6 col-12 homepage mb-3">
                 <img class="rounded mb-2" src="images\rest3.jpg" alt="Restaurant"/>
                 <h4>Restaurant</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis distinctio, fugit facere praesentium vel neque. Dicta quia molestias assumenda quod.</p>
                 <button type="button" class="btn">Go</button>
             </div>
-            <div class="col-lg-4 homepage">
+            <div class="col-md-4 col-sm-6 col-12 homepage mb-3">
                 <img class="rounded mb-2" src="images\food7.jpeg" alt="About Us"/>
                 <h4>About Us</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis distinctio, fugit facere praesentium vel neque. Dicta quia molestias assumenda quod.</p>
@@ -87,21 +95,30 @@
         </div>
     </div>
 
-    <div class="footer mt-3">
+    <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-8 mt-2">
+                <div class="col-lg-10 col-md-9 col-12">
                     <h5>Fancy Food</h5>
-                    <form>
-                        <div class="form-group col-5">
-                            <label for="exampleInputEmail1">Subscribe Us</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                    </form>
                 </div>
-                <div class="col-4">
-                    <img src="images\footer.png" alt="footer image">
+                <div class="col-lg-2 col-md-3 col-12 icons">
+                    <ul>
+                    <li><i class="fab fa-facebook-f fa-lg"></i></li>
+                    <li><i class="fab fa-twitter fa-lg"></i></li>
+                    <li><i class="fab fa-youtube fa-lg"></i></li>
+                    <li><i class="fab fa-instagram fa-lg"></i></li>
+                    <li><i class="far fa-envelope fa-lg"></i></li>
+                    </ul>
                 </div>
+                <div class="col-12 mt-2 mb-2 footerlink">
+                        <ul>
+                            <li>CONTACT US</li>
+                            <li>INVESTORS</li>
+                            <li>TERMS OF USE</li>
+                            <li>PRIVACY POLICY</li>
+                        </ul>
+                </div>
+
             </div>
         </div>
     </div>
