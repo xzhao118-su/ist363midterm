@@ -183,7 +183,6 @@ figure figcaption{
 
 figure.effect-layla h5{
     padding-top: 25%;
-	margin-left: 140px;
 	transition: transform 0.35s;
 	transition: transform 0.35s;
 	text-align: center;
@@ -199,7 +198,7 @@ figure.effect-layla p{
 	opacity: 0;
 	transform: translate3d(0,-5px,0);
     font-size: 1em;
-    color: #731111;
+    color: #513B34;
 }
 
 figure.effect-layla img, figure.effect-layla p{
@@ -262,10 +261,18 @@ figure.effect-layla:hover h5, figure.effect-layla:hover p, figure.effect-layla:h
         flex-wrap: wrap;
         font-size: 0.8em;
     }
+    figure.effect-layla h5{
+        padding-top: 15%;
+    }
 }
 
 @media screen and (max-width:540px){
     
+    .navigation img{
+        max-width: 15%;
+        max-height: 15%;
+    }
+
     .navigation ul{
         font-size:0.8em;
     }
@@ -280,5 +287,35 @@ figure.effect-layla:hover h5, figure.effect-layla:hover p, figure.effect-layla:h
 
     .footer .footerlink ul{
         font-size:0.7em;
+    }
+
+    figure.effect-layla h5{
+        padding-top: 7%;
+        font-size: 0.9em;
+        transform: translate3d(0,-3px,0);
+    }
+    figure.effect-layla p{
+        font-size: 0.7em;
+        transform: translate3d(0,0,0);    
+        padding: 0.35em 1em;
+    }
+}
+
+@media screen and (max-width:320px){
+    .navigation ul{
+        display: initial;
+        font-size:0.8em;
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+    figure.effect-layla h5{
+        padding-top: 25%;
+        font-size: 1em;
+        transform: translate3d(0,-5px,0);
+    }
+    figure.effect-layla p{
+        display: none;
     }
 }

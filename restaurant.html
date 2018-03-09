@@ -11,10 +11,11 @@
     <link rel="stylesheet" link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"/>
 </head>
 <body>
-
+    <h1 class="sr-only"> Fancy Food Restaurant Page</h1>
     <nav class="navigation navbar navbar-expand-md sticky-top">
+        <h1 class="sr-only"> navigation bar</h1>
         <div class="container">
-            <img src="images/logo1.png">
+            <img src="images/logo1.png" alt="logo">
             <div class="flex">
                 <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
                     <ul>
@@ -36,6 +37,7 @@
                     </form> 
                 </div>
                 <nav class="navbar navbar-dark">
+                    <h1 class="sr-only">navbar botton</h1>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -45,37 +47,49 @@
     </nav>
 
     <div class="container">
+        <section>
+            <h1 class="sr-only">Restaurant Recommendations</h1>
         <div class="row">
+            <section>
+            <h1 class="sr-only">Gudetama Restaurant</h1>
             <div class="mt-3 col-12">
                 <figure class="effect-layla">
                     <img class="rounded" src="images\rest1.jpg" alt=""/>
                     <figcaption>
                         <h5>Gudetama Restaurant</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum magni corporis minima consectetur laboriosam eaque earum ipsa mollitia dolorem deserunt!</p>
+                        <p>Gudetama is one of the most popluar Japaness cartoon character. This restaurant is a theme restaurant about Gudetama. The furnitures and foods are all looks like Gudetama.</p>
                     </figcaption>
                 </figure>
             </div>
+            </section>
+            <section>
+            <h1 class="sr-only">Hello Kitty Restaurant</h1>
             <div class="mt-3 col-12">
                     <figure class="effect-layla">
                         <img class="rounded" src="images\rest2.jpg" alt=""/>
                         <figcaption>
                             <h5>Hello Kitty Restaurant</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum magni corporis minima consectetur laboriosam eaque earum ipsa mollitia dolorem deserunt!</p>
+                            <p>Hello Kitty is one of the most popluar Japaness cartoon character. This restaurant is a theme restaurant about Hello Kitty. This restaurant will give people a feeling like a little princess.</p>
                         </figcaption>
                     </figure>
             </div>
+            </section>
+            <section>
+            <h1 class="sr-only">Undersea Restaurant</h1>
             <div class="mt-3 col-12">
-                    <figure class="effect-layla">
-                        <img class="rounded" src="images\rest4.jpg" alt=""/>
-                        <figcaption>
-                            <h5>Undersea Restaurant</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum magni corporis minima consectetur laboriosam eaque earum ipsa mollitia dolorem deserunt!</p>
-                        </figcaption>
-                    </figure>
+                <figure class="effect-layla">
+                    <img class="rounded" src="images\rest4.jpg" alt=""/>
+                    <figcaption>
+                        <h5>Undersea Restaurant</h5>
+                        <p>Conrad Maldives boasts the Maldives’ most iconic restaurant. Venture 16 feet below the ocean to dine at one of the world’s most extraordinary venues, with 180° views of marine life through its glass walls and arched glass roof.</p>
+                    </figcaption>
+                </figure>
             </div>
+            </section>
         </div>
 
         <nav aria-label="Page navigation example" class="mt-3">
+            <h1 class="sr-only">Page navigation</h1>
             <ul class="pagination justify-content-center">
                 <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
@@ -94,9 +108,11 @@
                 </li>
             </ul>
         </nav>
+        </section>
     </div>
-
+    <section>
     <div class="footer">
+        <h1 class="sr-only">footer</h1>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-md-9 col-12">
@@ -123,9 +139,10 @@
             </div>
         </div>
     </div>
+    </section>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
