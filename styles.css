@@ -264,6 +264,15 @@ figure.effect-layla:hover h5, figure.effect-layla:hover p, figure.effect-layla:h
     figure.effect-layla h5{
         padding-top: 15%;
     }
+
+    figure.effect-layla:hover h5, figure.effect-layla:hover p{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+    
+    figure.effect-layla:hover h5, figure.effect-layla:hover p, figure.effect-layla:hover img{
+        transition-delay: 0.15s;
+    }
 }
 
 @media screen and (max-width:540px){
